@@ -1,6 +1,6 @@
 import { UIProvider } from "@yamada-ui/react";
 import Header from "@/components/Header";
-import "./global.css";
+import "./globals.css";
 import styles from "./top.module.css";
 
 const defaultUrl = process.env.VERCEL_URL
