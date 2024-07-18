@@ -2,7 +2,7 @@
 
 ## usage
 
-1. Define variables in the .env file
+### 1. Define variables in the .env file
 
 Create a .env file in the root of the repository by referring to .env.example
 
@@ -16,6 +16,9 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 DB_PASSWORD=your-db-password
 ```
 
+### 2. Run
+
+use following command.
 ```shell
 $ npm run dev # npm
 $ yarn dev # yarn
