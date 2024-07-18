@@ -8,6 +8,8 @@
   "dependencies": {
     "@supabase/ssr": "latest",
     "@supabase/supabase-js": "latest",
+    "@yamada-ui/lucide": "^1.2.0",
+    "@yamada-ui/react": "^1.4.5",
     "autoprefixer": "10.4.17",
     "geist": "^1.2.1",
     "next": "latest",

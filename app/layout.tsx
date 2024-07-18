@@ -1,5 +1,7 @@
-import { GeistSans } from "geist/font/sans";
+import { UIProvider } from "@yamada-ui/react";
+import Header from "@/components/Header";
 import "./globals.css";
+import styles from "./top.module.css";
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -7,8 +9,8 @@ const defaultUrl = process.env.VERCEL_URL
 
 export const metadata = {
   metadataBase: new URL(defaultUrl),
-  title: "Next.js and Supabase Starter Kit",
-  description: "The fastest way to build apps with Next.js and Supabase",
+  title: "todo",
+  description: "A todo app powered by supabase",
 };
 
 export default function RootLayout({
@@ -16,12 +18,16 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
   return (
-    <html lang="en" className={GeistSans.className}>
-      <body className="bg-background text-foreground">
-        <main className="min-h-screen flex flex-col items-center">
-          {children}
-        </main>
+    <html lang="en">
+      <body className={styles.background}>
+        <UIProvider>
+          <Header/>
+          <main>
+            {children}
+          </main>
+        </UIProvider>
       </body>
     </html>
   );
