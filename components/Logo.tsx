@@ -2,7 +2,7 @@ import { SquareCheckBig } from "@yamada-ui/lucide"
 import styles from "./styles/logo.module.css"
 import { M_PLUS_Rounded_1c } from "next/font/google";
 
-const logoFont = M_PLUS_Rounded_1c({ subsets: ["latin"], weight: "400" });
+const logoFont = M_PLUS_Rounded_1c({ subsets: ["latin"], weight: "500" });
 
 type Size = "small" | "medium" | "large" | "extra-large"
 const sizeStyles = {

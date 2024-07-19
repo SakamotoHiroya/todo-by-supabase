@@ -1,5 +1,5 @@
 .background {
-    background: linear-gradient(var(--color-bg-top), var(--color-bg-bottom));
+    background: var(--color-bg);
     width: 100vw;
     min-height: 100vh;
 }
